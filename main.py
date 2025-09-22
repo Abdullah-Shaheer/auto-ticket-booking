@@ -207,7 +207,7 @@ def automate():
                 driver.execute_script('arguments[0].click();', but)
                 book_ticket(driver)
                 # try:
-                #     resp = requests.get(f"https://api.telegram.org/bot7522702707:AAG-ArCh982M1lio2DZOmrMY5vKoHULT5hM/sendMessage?chat_id=-4702099598&text= WILLEM II - Feyenoord is Booked Now Please Confirm Your Payment. Ticket Is In your Cart For 20 MInutes")
+                #     resp = requests.get(f"https://api.telegram.org/{bot token and chatid}&text= WILLEM II - Feyenoord is Booked Now Please Confirm Your Payment. Ticket Is In your Cart For 20 MInutes")
                 #     print(resp.json())
                 # except:
                 #     print('An error while sending the message.')
@@ -219,5 +219,6 @@ def automate():
 
 
 automate()
+
 
 
