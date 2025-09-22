@@ -138,12 +138,12 @@ def automate():
     url = 'https://tickets.feyenoord.nl/account/sso-login'
     driver.get(url)
     emai = WebDriverWait(driver, 20).until(ec.presence_of_element_located((By.NAME, "Email")))
-    em = 'Vannieuwenhuijzenjaap@gmail.com'
+    em = 'your email'
     for char in em:
         emai.send_keys(char)
         time.sleep(random.uniform(0.1, 0.3))
     ps = WebDriverWait(driver, 20).until(ec.presence_of_element_located((By.NAME, "Password")))
-    p = 'Ys454124'
+    p = 'your password'
     for char in p:
         ps.send_keys(char)
         time.sleep(random.uniform(0.1, 0.3))
@@ -219,4 +219,5 @@ def automate():
 
 
 automate()
+
 
